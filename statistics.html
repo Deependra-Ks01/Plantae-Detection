@@ -10,6 +10,21 @@
     <a href="index.html"> homepage</a>
     <br>
     <br>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(#ffffff, #949494);
+            flex-wrap: wrap;
+            padding: 2em;
+        }
+    </style>
     <p>Form for data input (with radius of 50 meters with center at intersection of latitude and longitude) </p>
     <form action="" method="">
         <label for='text'> latitude</label>
@@ -19,6 +34,12 @@
         <br>
         <label for='text'> Density changed percentage </label>
         <input type="text" latitude="latitude" id="text">
+        <br>
+        <p>Please select the action performed</p>
+        <select name="action" id="">
+            <option value="Deforestation">Deforestation</option>
+            <option value="Aforestation">Aforestation</option>
+        </select>
         <br>
         <input type="password" placeholder="security key">
         <br>
